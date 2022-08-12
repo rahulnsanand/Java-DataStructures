@@ -19,6 +19,8 @@ package com.rahulnsanand.javabrushup.fundamentals;
 // /, %, * Same high precedence (Operated Left To Right)
 // +,- Same lower precedence (Operated Left To Right)
 
+// 'a' char ASCII value 97
+
 public class DataTypes {
 
     public static void dataTypeCheck(){
@@ -32,7 +34,19 @@ public class DataTypes {
         char charValue = 'C';
         boolean booleanValue = true;
 
+        int minIntegerValue = Integer.MIN_VALUE;
+        int maxIntegerValue = Integer.MAX_VALUE;
 
+        int charPlusInt = 'a' + 3; // Value = 100
+
+        char charExample = 'a';
+        int typeCastToInt = charExample; // Value = 97
+
+        //char reverseCastToChar = typeCastToInt; // Error due to 4byte value moving to 2byte memory (Implicit Conversion)
+
+        char reverseCastToChar = (char) typeCastToInt; // Explicit Conversion
+
+        //char charPlusIntStoredInChar = 'a' + 3; // Error due to 4byte value (Integer) moving to 2byte memory
 
     }
 
