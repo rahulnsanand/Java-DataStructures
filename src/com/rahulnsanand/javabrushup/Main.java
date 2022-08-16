@@ -4,6 +4,7 @@ package com.rahulnsanand.javabrushup;
 
 import com.rahulnsanand.javabrushup.assignments.CharCaseCheck;
 import com.rahulnsanand.javabrushup.assignments.FahrenheitToCelcius;
+import com.rahulnsanand.javabrushup.assignments.MultiplicationTable;
 import com.rahulnsanand.javabrushup.assignments.SalaryCalculator;
 import com.rahulnsanand.javabrushup.debug.DebugClass;
 import com.rahulnsanand.javabrushup.fundamentals.HelloWorld;
@@ -21,6 +22,8 @@ public class Main {
         System.out.println("3 - Character Case Check");
         System.out.println("4 - Fahrenheit To Celcius");
         System.out.println("5 - Salary Calculator");
+        System.out.println("6 - Multiplication Table");
+        System.out.println("6 - Multiplication Table");
         int choice = scannerInput.nextInt();
         switch (choice) {
             case 0 -> DebugClass.debugThis();
@@ -35,6 +38,7 @@ public class Main {
             case 3 -> CharCaseCheck.run();
             case 4 -> FahrenheitToCelcius.run();
             case 5 -> SalaryCalculator.run();
+            case 6 -> MultiplicationTable.run();
         }
     }
 
