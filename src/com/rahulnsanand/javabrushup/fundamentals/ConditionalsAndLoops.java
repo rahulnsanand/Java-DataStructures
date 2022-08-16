@@ -33,6 +33,12 @@ public class ConditionalsAndLoops {
     public static void conditionalOperators(){
         // if, for, while, switch
 
+        int i = 1;
+        while(i<=5){
+            System.out.println("Hello ->"+i);
+            i++;
+        }
+
 
 
     }

@@ -5,16 +5,12 @@ import java.util.Scanner;
 public class DebugClass {
 
     public static void debugThis(){
-        int a=50;
-        int b=Integer.MIN_VALUE;
-        if(a/0==b)
-        {
-
+        int x=5;
+        int y=5;
+        while((x=5)==y) {
             System.out.println("Hello");
-        }
-        else
-        {
-            System.out.println("Hi");
+            x++;
+            y++;
         }
     }
 
