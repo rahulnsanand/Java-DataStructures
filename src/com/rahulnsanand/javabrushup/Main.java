@@ -22,6 +22,7 @@ public class Main {
         System.out.println("6 - Multiplication Table");
         System.out.println("7 - Sum of Even & Odd");
         System.out.println("8 - Find Factors");
+        System.out.println("9 - Find Power Of Number");
         int choice = scannerInput.nextInt();
         switch (choice) {
             case 0 -> DebugClass.debugThis();
@@ -39,6 +40,7 @@ public class Main {
             case 6 -> MultiplicationTable.run();
             case 7 -> SumOfEvenOdd.run();
             case 8 -> FindFactors.run();
+            case 9 -> FindPowerOfNum.run();
         }
     }
 
