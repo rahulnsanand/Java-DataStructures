@@ -6,41 +6,87 @@ import com.rahulnsanand.javabrushup.assignments.*;
 import com.rahulnsanand.javabrushup.debug.DebugClass;
 import com.rahulnsanand.javabrushup.fundamentals.HelloWorld;
 import com.rahulnsanand.javabrushup.fundamentals.SumOfNumbers;
+import com.rahulnsanand.javabrushup.pattern.SimplePattern;
+import com.rahulnsanand.javabrushup.pattern.SquarePattern;
 
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+        boolean repeatCheck = true;
         Scanner scannerInput = new Scanner(System.in);
-        System.out.println("0 - Debug Class Run");
-        System.out.println("1 - Hello World");
-        System.out.println("2 - Sum of two Numbers");
-        System.out.println("3 - Character Case Check");
-        System.out.println("4 - Fahrenheit To Celcius");
-        System.out.println("5 - Salary Calculator");
-        System.out.println("6 - Multiplication Table");
-        System.out.println("7 - Sum of Even & Odd");
-        System.out.println("8 - Find Factors");
-        System.out.println("9 - Find Power Of Number");
+        int choice;
+
+        while(repeatCheck){
+
+            System.out.println("0 - Debug Class Run");
+            System.out.println("1 - Fundamentals");
+            System.out.println("2 - Patterns");
+            System.out.println("3 - Exit");
+            choice = scannerInput.nextInt();
+            switch (choice) {
+                case 0 -> DebugClass.debugThis();
+                case 1 -> showFundamentals();
+                case 2 -> showPatterns();
+                case 3 -> repeatCheck=false;
+            }
+        }
+
+    }
+    public static void showPatterns(){
+        Scanner scannerInput = new Scanner(System.in);
+        System.out.println("0 - Simple Pattern");
+        System.out.println("1 - Square Pattern");
+        System.out.println("2 - ");
+        System.out.println("3 - ");
+        System.out.println("4 - ");
+        System.out.println("5 - ");
+        System.out.println("6 - ");
+        System.out.println("7 - ");
+        System.out.println("8 - ");
         int choice = scannerInput.nextInt();
         switch (choice) {
-            case 0 -> DebugClass.debugThis();
-            case 1 -> HelloWorld.print();
-            case 2 -> {
+            case 0 -> SimplePattern.run();
+            case 1 -> SquarePattern.run();
+            case 2 -> CharCaseCheck.run();
+            case 3 -> FahrenheitToCelcius.run();
+            case 4 -> SalaryCalculator.run();
+            case 5 -> MultiplicationTable.run();
+            case 6 -> SumOfEvenOdd.run();
+            case 7 -> FindFactors.run();
+            case 8 -> FindPowerOfNum.run();
+        }
+    }
+
+    public static void showFundamentals(){
+        Scanner scannerInput = new Scanner(System.in);
+        System.out.println("0 - Hello World");
+        System.out.println("1 - Sum of two Numbers");
+        System.out.println("2 - Character Case Check");
+        System.out.println("3 - Fahrenheit To Celcius");
+        System.out.println("4 - Salary Calculator");
+        System.out.println("5 - Multiplication Table");
+        System.out.println("6 - Sum of Even & Odd");
+        System.out.println("7 - Find Factors");
+        System.out.println("8 - Find Power Of Number");
+        int choice = scannerInput.nextInt();
+        switch (choice) {
+            case 0 -> HelloWorld.print();
+            case 1 -> {
                 System.out.println("Enter Number 1: ");
                 int a = scannerInput.nextInt();
                 System.out.println("Enter Number 2: ");
                 int b = scannerInput.nextInt();
                 SumOfNumbers.sum(a, b);
             }
-            case 3 -> CharCaseCheck.run();
-            case 4 -> FahrenheitToCelcius.run();
-            case 5 -> SalaryCalculator.run();
-            case 6 -> MultiplicationTable.run();
-            case 7 -> SumOfEvenOdd.run();
-            case 8 -> FindFactors.run();
-            case 9 -> FindPowerOfNum.run();
+            case 2 -> CharCaseCheck.run();
+            case 3 -> FahrenheitToCelcius.run();
+            case 4 -> SalaryCalculator.run();
+            case 5 -> MultiplicationTable.run();
+            case 6 -> SumOfEvenOdd.run();
+            case 7 -> FindFactors.run();
+            case 8 -> FindPowerOfNum.run();
         }
     }
 
