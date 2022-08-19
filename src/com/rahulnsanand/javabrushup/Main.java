@@ -8,6 +8,7 @@ import com.rahulnsanand.javabrushup.fundamentals.HelloWorld;
 import com.rahulnsanand.javabrushup.fundamentals.SumOfNumbers;
 import com.rahulnsanand.javabrushup.pattern.SimplePattern;
 import com.rahulnsanand.javabrushup.pattern.SquarePattern;
+import com.rahulnsanand.javabrushup.pattern.TrianglePattern;
 
 import java.util.Scanner;
 
@@ -38,7 +39,7 @@ public class Main {
         Scanner scannerInput = new Scanner(System.in);
         System.out.println("0 - Simple Pattern");
         System.out.println("1 - Square Pattern");
-        System.out.println("2 - ");
+        System.out.println("2 - Triangle Pattern");
         System.out.println("3 - ");
         System.out.println("4 - ");
         System.out.println("5 - ");
@@ -49,7 +50,7 @@ public class Main {
         switch (choice) {
             case 0 -> SimplePattern.run();
             case 1 -> SquarePattern.run();
-            case 2 -> CharCaseCheck.run();
+            case 2 -> TrianglePattern.run();
             case 3 -> FahrenheitToCelcius.run();
             case 4 -> SalaryCalculator.run();
             case 5 -> MultiplicationTable.run();
