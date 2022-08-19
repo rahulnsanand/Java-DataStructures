@@ -43,7 +43,7 @@ public class Main {
         System.out.println("5 - Reverse Number Pattern");
         System.out.println("6 - Alpha Pattern");
         System.out.println("7 - Character Pattern");
-        System.out.println("8 - ");
+        System.out.println("8 - Triangle Character Pattern");
         int choice = scannerInput.nextInt();
         switch (choice) {
             case 0 -> SimplePattern.run();
@@ -54,7 +54,7 @@ public class Main {
             case 5 -> ReverseNumberPattern.run();
             case 6 -> AlphaPattern.run();
             case 7 -> CharacterPattern.run();
-            case 8 -> FindPowerOfNum.run();
+            case 8 -> TriangleCharacterPattern.run();
         }
     }
 
