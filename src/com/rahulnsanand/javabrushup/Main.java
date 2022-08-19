@@ -6,9 +6,7 @@ import com.rahulnsanand.javabrushup.fundamentals.assignments.*;
 import com.rahulnsanand.javabrushup.debug.DebugClass;
 import com.rahulnsanand.javabrushup.fundamentals.HelloWorld;
 import com.rahulnsanand.javabrushup.fundamentals.SumOfNumbers;
-import com.rahulnsanand.javabrushup.pattern.SimplePattern;
-import com.rahulnsanand.javabrushup.pattern.SquarePattern;
-import com.rahulnsanand.javabrushup.pattern.TrianglePattern;
+import com.rahulnsanand.javabrushup.pattern.*;
 
 import java.util.Scanner;
 
@@ -40,9 +38,9 @@ public class Main {
         System.out.println("0 - Simple Pattern");
         System.out.println("1 - Square Pattern");
         System.out.println("2 - Triangle Pattern");
-        System.out.println("3 - ");
-        System.out.println("4 - ");
-        System.out.println("5 - ");
+        System.out.println("3 - Triangle Star Pattern");
+        System.out.println("4 - Triangle Number Pattern");
+        System.out.println("5 - Reverse Number Pattern");
         System.out.println("6 - ");
         System.out.println("7 - ");
         System.out.println("8 - ");
@@ -51,9 +49,9 @@ public class Main {
             case 0 -> SimplePattern.run();
             case 1 -> SquarePattern.run();
             case 2 -> TrianglePattern.run();
-            case 3 -> FahrenheitToCelcius.run();
-            case 4 -> SalaryCalculator.run();
-            case 5 -> MultiplicationTable.run();
+            case 3 -> TriangularStarPattern.run();
+            case 4 -> TriangleNumberPattern.run();
+            case 5 -> ReverseNumberPattern.run();
             case 6 -> SumOfEvenOdd.run();
             case 7 -> FindFactors.run();
             case 8 -> FindPowerOfNum.run();
