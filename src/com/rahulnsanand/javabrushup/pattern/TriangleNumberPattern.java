@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class TriangleNumberPattern {
     public static void run(){
+        System.out.println("Enter the value of row x col :");
         Scanner scanner=new Scanner (System.in);
         int n = scanner.nextInt();
         int i = 1;
