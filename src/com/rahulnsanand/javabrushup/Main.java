@@ -7,6 +7,7 @@ import com.rahulnsanand.javabrushup.debug.DebugClass;
 import com.rahulnsanand.javabrushup.fundamentals.HelloWorld;
 import com.rahulnsanand.javabrushup.fundamentals.SumOfNumbers;
 import com.rahulnsanand.javabrushup.pattern.*;
+import com.rahulnsanand.javabrushup.pattern.assignments.HalfDiamondPattern;
 
 import java.util.Scanner;
 
@@ -50,7 +51,7 @@ public class Main {
         System.out.println("12 - Star Pattern");
         System.out.println("13 - Triangle Of Numbers");
         System.out.println("14 - Diamond Of Stars");
-        System.out.println("15 - ");
+        System.out.println("15 - Half Diamond Pattern");
         System.out.println("16 - ");
         System.out.println("17 - ");
         System.out.println("18 - ");
@@ -73,7 +74,7 @@ public class Main {
             case 12 -> StarPattern.run();
             case 13 -> TriangleOfNumbers.run();
             case 14 -> DiamondOfStars.run();
-            case 15 -> ReverseNumberPattern.run();
+            case 15 -> HalfDiamondPattern.run();
             case 16 -> AlphaPattern.run();
             case 17 -> CharacterPattern.run();
             case 18 -> TriangleCharacterPattern.run();
