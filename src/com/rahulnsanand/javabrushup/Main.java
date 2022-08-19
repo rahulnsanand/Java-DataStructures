@@ -47,7 +47,7 @@ public class Main {
         System.out.println("9 - Interesting Character Pattern");
         System.out.println("10 - Mirror Image Number Pattern");
         System.out.println("11 - Inverted Number Pattern");
-        System.out.println("12 - ");
+        System.out.println("12 - Star Pattern");
         System.out.println("13 - ");
         System.out.println("14 - ");
         System.out.println("15 - ");
@@ -70,7 +70,7 @@ public class Main {
             case 9 -> InterestingAlphabets.run();
             case 10 -> MirrorImageNumberPattern.run();
             case 11 -> InvertedNumberPattern.run();
-            case 12 -> TrianglePattern.run();
+            case 12 -> StarPattern.run();
             case 13 -> TriangularStarPattern.run();
             case 14 -> TriangleNumberPattern.run();
             case 15 -> ReverseNumberPattern.run();
