@@ -2,7 +2,7 @@ package com.rahulnsanand.javabrushup;
 // Created by Rahul Anand (C) 2022
 // This is the main file to run in order to access the whole project
 
-import com.rahulnsanand.javabrushup.assignments.*;
+import com.rahulnsanand.javabrushup.fundamentals.assignments.*;
 import com.rahulnsanand.javabrushup.debug.DebugClass;
 import com.rahulnsanand.javabrushup.fundamentals.HelloWorld;
 import com.rahulnsanand.javabrushup.fundamentals.SumOfNumbers;

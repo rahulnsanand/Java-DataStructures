@@ -1,4 +1,4 @@
-package com.rahulnsanand.javabrushup.assignments;
+package com.rahulnsanand.javabrushup.fundamentals.assignments;
 
 import java.util.Scanner;
 
