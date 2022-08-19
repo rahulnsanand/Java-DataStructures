@@ -44,6 +44,7 @@ public class Main {
         System.out.println("6 - Alpha Pattern");
         System.out.println("7 - Character Pattern");
         System.out.println("8 - Triangle Character Pattern");
+        System.out.println("9 - Interesting Character Pattern");
         int choice = scannerInput.nextInt();
         switch (choice) {
             case 0 -> SimplePattern.run();
@@ -55,6 +56,7 @@ public class Main {
             case 6 -> AlphaPattern.run();
             case 7 -> CharacterPattern.run();
             case 8 -> TriangleCharacterPattern.run();
+            case 9 -> InterestingAlphabets.run();
         }
     }
 
