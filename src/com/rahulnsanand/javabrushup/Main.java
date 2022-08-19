@@ -8,6 +8,7 @@ import com.rahulnsanand.javabrushup.fundamentals.HelloWorld;
 import com.rahulnsanand.javabrushup.fundamentals.SumOfNumbers;
 import com.rahulnsanand.javabrushup.pattern.*;
 import com.rahulnsanand.javabrushup.pattern.assignments.HalfDiamondPattern;
+import com.rahulnsanand.javabrushup.pattern.assignments.OddSquare;
 import com.rahulnsanand.javabrushup.pattern.assignments.ParallelogramPattern;
 import com.rahulnsanand.javabrushup.pattern.assignments.SumPattern;
 
@@ -56,7 +57,7 @@ public class Main {
         System.out.println("15 - Half Diamond Pattern");
         System.out.println("16 - Parallelogram Pattern");
         System.out.println("17 - Sum Pattern");
-        System.out.println("18 - ");
+        System.out.println("18 - Odd quare");
         System.out.println("19 - ");
 
         int choice = scannerInput.nextInt();
@@ -79,7 +80,7 @@ public class Main {
             case 15 -> HalfDiamondPattern.run();
             case 16 -> ParallelogramPattern.run();
             case 17 -> SumPattern.run();
-            case 18 -> TriangleCharacterPattern.run();
+            case 18 -> OddSquare.run();
             case 19 -> InterestingAlphabets.run();
         }
     }
