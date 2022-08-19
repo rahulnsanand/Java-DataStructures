@@ -9,7 +9,6 @@ public class SumPattern {
         int n = scanner.nextInt();
         int i=1, countHelp, sum;
         while(i<=n){
-
             if(i==1){
                 System.out.print("1=1");
             } else {
