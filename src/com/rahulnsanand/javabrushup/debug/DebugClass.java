@@ -5,19 +5,12 @@ import java.util.Scanner;
 public class DebugClass {
 
     public static void debugThis(){
-        int i = 1;
-        while(i < 3) {
-            int j = 0;
-            while(j < 5) {
-                j++;
-                if(j == 3) {
-                    continue;
-                }
-                System.out.print(j + " ");
-            }
-            i++;
+        int x = 10;
+        while(x >= 0) {
+            x = x - 1;
+            System.out.print(x);
+            x--;
         }
-
         System.out.println();
     }
 
