@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class DebugClass {
 
     public static void debugThis(){
-        int a=10,b=-20;
-        System.out.print(a^b);
+        int a=5;
+        a+=5+(++a)+(a++);
+        System.out.print(a);
     }
 
 }
