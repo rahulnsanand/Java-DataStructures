@@ -13,8 +13,7 @@ import com.rahulnsanand.javabrushup.pattern.assignments.HalfDiamondPattern;
 import com.rahulnsanand.javabrushup.pattern.assignments.OddSquare;
 import com.rahulnsanand.javabrushup.pattern.assignments.ParallelogramPattern;
 import com.rahulnsanand.javabrushup.pattern.assignments.SumPattern;
-import com.rahulnsanand.javabrushup.test.CheckAP;
-import com.rahulnsanand.javabrushup.test.PalindromeNumber;
+import com.rahulnsanand.javabrushup.test.*;
 
 import java.util.Scanner;
 
@@ -51,9 +50,9 @@ public class Main {
         Scanner scannerInput = new Scanner(System.in);
         System.out.println("0 - Palindrome Number Check");
         System.out.println("1 - Check AP");
-        System.out.println("2 - ");
-        System.out.println("3 - ");
-        System.out.println("4 - ");
+        System.out.println("2 - Number Star Pattern 1");
+        System.out.println("3 - Number Star Pattern");
+        System.out.println("4 - Probability");
         System.out.println("5 - ");
         System.out.println("6 - ");
         System.out.println("7 - ");
@@ -73,9 +72,9 @@ public class Main {
         switch (choice) {
             case 0 -> PalindromeNumber.run();
             case 1 -> CheckAP.run();
-            case 2 -> TrianglePattern.run();
-            case 3 -> TriangularStarPattern.run();
-            case 4 -> TriangleNumberPattern.run();
+            case 2 -> NumberStarPattern1.run();
+            case 3 -> NumberStarPattern.run();
+            case 4 -> Probability.run();
             case 5 -> ReverseNumberPattern.run();
             case 6 -> AlphaPattern.run();
             case 7 -> CharacterPattern.run();
