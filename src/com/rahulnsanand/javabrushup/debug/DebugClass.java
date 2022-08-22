@@ -5,9 +5,20 @@ import java.util.Scanner;
 public class DebugClass {
 
     public static void debugThis(){
-        int a=5;
-        a+=5+(++a)+(a++);
-        System.out.print(a);
+        int i = 1;
+        while(i < 3) {
+            int j = 0;
+            while(j < 5) {
+                j++;
+                if(j == 3) {
+                    continue;
+                }
+                System.out.print(j + " ");
+            }
+            i++;
+        }
+
+        System.out.println();
     }
 
 }
