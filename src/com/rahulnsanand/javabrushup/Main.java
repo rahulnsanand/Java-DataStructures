@@ -13,6 +13,7 @@ import com.rahulnsanand.javabrushup.pattern.assignments.HalfDiamondPattern;
 import com.rahulnsanand.javabrushup.pattern.assignments.OddSquare;
 import com.rahulnsanand.javabrushup.pattern.assignments.ParallelogramPattern;
 import com.rahulnsanand.javabrushup.pattern.assignments.SumPattern;
+import com.rahulnsanand.javabrushup.test.CheckAP;
 import com.rahulnsanand.javabrushup.test.PalindromeNumber;
 
 import java.util.Scanner;
@@ -49,7 +50,7 @@ public class Main {
     private static void showTestCases() {
         Scanner scannerInput = new Scanner(System.in);
         System.out.println("0 - Palindrome Number Check");
-        System.out.println("1 - ");
+        System.out.println("1 - Check AP");
         System.out.println("2 - ");
         System.out.println("3 - ");
         System.out.println("4 - ");
@@ -71,7 +72,7 @@ public class Main {
         int choice = scannerInput.nextInt();
         switch (choice) {
             case 0 -> PalindromeNumber.run();
-            case 1 -> AllPrimeNumbers.run();
+            case 1 -> CheckAP.run();
             case 2 -> TrianglePattern.run();
             case 3 -> TriangularStarPattern.run();
             case 4 -> TriangleNumberPattern.run();
