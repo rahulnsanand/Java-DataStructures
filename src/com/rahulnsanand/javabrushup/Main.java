@@ -3,6 +3,7 @@ package com.rahulnsanand.javabrushup;
 // This is the main file to run in order to access the whole project
 
 import com.rahulnsanand.javabrushup.functionsandscope.FahrenheitToCelsius;
+import com.rahulnsanand.javabrushup.functionsandscope.FibonacciNumber;
 import com.rahulnsanand.javabrushup.fundamentals.assignments.*;
 import com.rahulnsanand.javabrushup.debug.DebugClass;
 import com.rahulnsanand.javabrushup.fundamentals.HelloWorld;
@@ -54,7 +55,7 @@ public class Main {
     private static void showFunctionsAndScope() {
         Scanner scannerInput = new Scanner(System.in);
         System.out.println("0 - Fahrenheit To Celsius Table");
-        System.out.println("1 - ");
+        System.out.println("1 - Fibonacci Number");
         System.out.println("2 - ");
         System.out.println("3 - ");
         System.out.println("4 - ");
@@ -63,7 +64,7 @@ public class Main {
         int choice = scannerInput.nextInt();
         switch (choice) {
             case 0 -> FahrenheitToCelsius.run();
-            case 1 -> CheckAP.run();
+            case 1 -> FibonacciNumber.run();
             case 2 -> NumberStarPattern1.run();
             case 3 -> NumberStarPattern.run();
             case 4 -> Probability.run();
