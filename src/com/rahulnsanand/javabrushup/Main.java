@@ -103,7 +103,7 @@ public class Main {
         System.out.println("5 - Binary To Decimal");
         System.out.println("6 - Decimal To Binary");
         System.out.println("7 - Square Root");
-        System.out.println("8 - ");
+        System.out.println("8 - Check Number Sequence");
         System.out.println("9 - ");
         System.out.println("10 - ");
 
@@ -117,7 +117,7 @@ public class Main {
             case 5 -> BinaryToDecimal.run();
             case 6 -> DecimalToBinary.run();
             case 7 -> SquareRoot.run();
-            case 8 -> TriangleCharacterPattern.run();
+            case 8 -> CheckNumberSequence.run();
             case 9 -> InterestingAlphabets.run();
             case 10 -> MirrorImageNumberPattern.run();
         }
