@@ -2,6 +2,7 @@ package com.rahulnsanand.javabrushup;
 // Created by Rahul Anand (C) 2022
 // This is the main file to run in order to access the whole project
 
+import com.rahulnsanand.javabrushup.functionsandscope.FahrenheitToCelsius;
 import com.rahulnsanand.javabrushup.fundamentals.assignments.*;
 import com.rahulnsanand.javabrushup.debug.DebugClass;
 import com.rahulnsanand.javabrushup.fundamentals.HelloWorld;
@@ -28,23 +29,46 @@ public class Main {
         while(repeatCheck){
 
             System.out.println("0 - Debug Class Run");
-            System.out.println("1 - Fundamentals");
-            System.out.println("2 - Patterns");
-            System.out.println("3 - Operators & For Loop");
-            System.out.println("4 - Test");
-            System.out.println("5 - Exit");
+            System.out.println("1 - Test ");
+            System.out.println("2 - Exit");
+            System.out.println("3 - Fundamentals");
+            System.out.println("4 - Patterns");
+            System.out.println("5 - Operators & For Loop");
+            System.out.println("6 - Functions & Scope");
+
             choice = scannerInput.nextInt();
             switch (choice) {
                 case 0 -> DebugClass.debugThis();
-                case 1 -> showFundamentals();
-                case 2 -> showPatterns();
-                case 3 -> showOperatorsForLoop();
-                case 4 -> showTestCases();
-                case 5 -> repeatCheck=false;
+                case 1 -> showTestCases();
+                case 2 -> repeatCheck=false;
+                case 3 -> showFundamentals();
+                case 4 -> showPatterns();
+                case 5 -> showOperatorsForLoop();
+                case 6 -> showFunctionsAndScope();
 
             }
         }
 
+    }
+
+    private static void showFunctionsAndScope() {
+        Scanner scannerInput = new Scanner(System.in);
+        System.out.println("0 - Fahrenheit To Celsius Table");
+        System.out.println("1 - ");
+        System.out.println("2 - ");
+        System.out.println("3 - ");
+        System.out.println("4 - ");
+        System.out.println("5 - ");
+
+        int choice = scannerInput.nextInt();
+        switch (choice) {
+            case 0 -> FahrenheitToCelsius.run();
+            case 1 -> CheckAP.run();
+            case 2 -> NumberStarPattern1.run();
+            case 3 -> NumberStarPattern.run();
+            case 4 -> Probability.run();
+            case 5 -> MaximumNumber.run(1111);
+        }
     }
 
     private static void showTestCases() {
@@ -104,8 +128,6 @@ public class Main {
         System.out.println("6 - Decimal To Binary");
         System.out.println("7 - Square Root");
         System.out.println("8 - Check Number Sequence");
-        System.out.println("9 - ");
-        System.out.println("10 - ");
 
         int choice = scannerInput.nextInt();
         switch (choice) {
@@ -117,10 +139,7 @@ public class Main {
             case 5 -> BinaryToDecimal.run();
             case 6 -> DecimalToBinary.run();
             case 7 -> SquareRoot.run();
-            case 8 -> CheckNumberSequence.run();
-            case 9 -> InterestingAlphabets.run();
-            case 10 -> MirrorImageNumberPattern.run();
-        }
+            case 8 -> CheckNumberSequence.run();        }
     }
 
     public static void showPatterns(){
