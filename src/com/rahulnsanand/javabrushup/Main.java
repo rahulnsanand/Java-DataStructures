@@ -53,7 +53,7 @@ public class Main {
         System.out.println("2 - Number Star Pattern 1");
         System.out.println("3 - Number Star Pattern");
         System.out.println("4 - Probability");
-        System.out.println("5 - ");
+        System.out.println("5 - Maximum Number");
         System.out.println("6 - ");
         System.out.println("7 - ");
         System.out.println("8 - ");
@@ -75,7 +75,7 @@ public class Main {
             case 2 -> NumberStarPattern1.run();
             case 3 -> NumberStarPattern.run();
             case 4 -> Probability.run();
-            case 5 -> ReverseNumberPattern.run();
+            case 5 -> MaximumNumber.run(1111);
             case 6 -> AlphaPattern.run();
             case 7 -> CharacterPattern.run();
             case 8 -> TriangleCharacterPattern.run();
