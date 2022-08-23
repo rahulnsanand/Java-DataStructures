@@ -8,6 +8,7 @@ import com.rahulnsanand.javabrushup.fundamentals.HelloWorld;
 import com.rahulnsanand.javabrushup.fundamentals.SumOfNumbers;
 import com.rahulnsanand.javabrushup.operatorsandloop.AllPrimeNumbers;
 import com.rahulnsanand.javabrushup.operatorsandloop.NthFibonacciNumber;
+import com.rahulnsanand.javabrushup.operatorsandloop.assignment.SumOrProduct;
 import com.rahulnsanand.javabrushup.pattern.*;
 import com.rahulnsanand.javabrushup.pattern.assignments.HalfDiamondPattern;
 import com.rahulnsanand.javabrushup.pattern.assignments.OddSquare;
@@ -96,7 +97,7 @@ public class Main {
         Scanner scannerInput = new Scanner(System.in);
         System.out.println("0 - Nth Fibonacci Number");
         System.out.println("1 - All Prime Numbers");
-        System.out.println("2 - Triangle Pattern");
+        System.out.println("2 - Sum Or Product");
         System.out.println("3 - Triangle Star Pattern");
         System.out.println("4 - Triangle Number Pattern");
         System.out.println("5 - Reverse Number Pattern");
@@ -118,7 +119,7 @@ public class Main {
         switch (choice) {
             case 0 -> NthFibonacciNumber.run();
             case 1 -> AllPrimeNumbers.run();
-            case 2 -> TrianglePattern.run();
+            case 2 -> SumOrProduct.run();
             case 3 -> TriangularStarPattern.run();
             case 4 -> TriangleNumberPattern.run();
             case 5 -> ReverseNumberPattern.run();
