@@ -6,6 +6,7 @@ import com.rahulnsanand.javabrushup.arrays.ArrangeNumbersInArray;
 import com.rahulnsanand.javabrushup.arrays.LinearSearch;
 import com.rahulnsanand.javabrushup.arrays.ReturnArraySum;
 import com.rahulnsanand.javabrushup.arrays.SwapAlternate;
+import com.rahulnsanand.javabrushup.arrays.assignments.FindUnique;
 import com.rahulnsanand.javabrushup.functionsandscope.FahrenheitToCelsius;
 import com.rahulnsanand.javabrushup.functionsandscope.FibonacciNumber;
 import com.rahulnsanand.javabrushup.fundamentals.assignments.*;
@@ -64,7 +65,7 @@ public class Main {
         System.out.println("1 - Linear Search");
         System.out.println("2 - Arrange Numbers In Array");
         System.out.println("3 - Swap Alternate");
-        System.out.println("4 - ");
+        System.out.println("4 - Find Unique");
         System.out.println("5 - ");
 
         int choice = scannerInput.nextInt();
@@ -73,7 +74,7 @@ public class Main {
             case 1 -> LinearSearch.run();
             case 2 -> ArrangeNumbersInArray.run();
             case 3 -> SwapAlternate.run();
-            case 4 -> Probability.run();
+            case 4 -> FindUnique.run();
             case 5 -> MaximumNumber.run(1111);
         }
     }
