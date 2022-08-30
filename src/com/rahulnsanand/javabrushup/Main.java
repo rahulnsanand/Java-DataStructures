@@ -2,6 +2,7 @@ package com.rahulnsanand.javabrushup;
 // Created by Rahul Anand (C) 2022
 // This is the main file to run in order to access the whole project
 
+import com.rahulnsanand.javabrushup.arrays.LinearSearch;
 import com.rahulnsanand.javabrushup.arrays.ReturnArraySum;
 import com.rahulnsanand.javabrushup.functionsandscope.FahrenheitToCelsius;
 import com.rahulnsanand.javabrushup.functionsandscope.FibonacciNumber;
@@ -57,7 +58,7 @@ public class Main {
     private static void showArrays() {
         Scanner scannerInput = new Scanner(System.in);
         System.out.println("0 - Return Array Sum");
-        System.out.println("1 - Fibonacci Number");
+        System.out.println("1 - Linear Search");
         System.out.println("2 - ");
         System.out.println("3 - ");
         System.out.println("4 - ");
@@ -66,7 +67,7 @@ public class Main {
         int choice = scannerInput.nextInt();
         switch (choice) {
             case 0 -> ReturnArraySum.run();
-            case 1 -> FibonacciNumber.run();
+            case 1 -> LinearSearch.run();
             case 2 -> NumberStarPattern1.run();
             case 3 -> NumberStarPattern.run();
             case 4 -> Probability.run();
