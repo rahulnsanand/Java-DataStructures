@@ -6,9 +6,7 @@ import com.rahulnsanand.javabrushup.arrays.ArrangeNumbersInArray;
 import com.rahulnsanand.javabrushup.arrays.LinearSearch;
 import com.rahulnsanand.javabrushup.arrays.ReturnArraySum;
 import com.rahulnsanand.javabrushup.arrays.SwapAlternate;
-import com.rahulnsanand.javabrushup.arrays.assignments.FindDuplicate;
-import com.rahulnsanand.javabrushup.arrays.assignments.FindUnique;
-import com.rahulnsanand.javabrushup.arrays.assignments.IntersectionOfTwoArrays;
+import com.rahulnsanand.javabrushup.arrays.assignments.*;
 import com.rahulnsanand.javabrushup.functionsandscope.FahrenheitToCelsius;
 import com.rahulnsanand.javabrushup.functionsandscope.FibonacciNumber;
 import com.rahulnsanand.javabrushup.fundamentals.assignments.*;
@@ -69,9 +67,9 @@ public class Main {
         System.out.println("3 - Swap Alternate");
         System.out.println("4 - Find Unique");
         System.out.println("5 - Find Duplicate");
-        System.out.println("6 - ");
-        System.out.println("7 - ");
-        System.out.println("8 - ");
+        System.out.println("6 - Intersection Of Two Arrays");
+        System.out.println("7 - Pair Sum");
+        System.out.println("8 - Triplet Sum");
         System.out.println("9 - ");
 
         int choice = scannerInput.nextInt();
@@ -83,8 +81,8 @@ public class Main {
             case 4 -> FindUnique.run();
             case 5 -> FindDuplicate.run();
             case 6 -> IntersectionOfTwoArrays.run();
-            case 7 -> SwapAlternate.run();
-            case 8 -> FindUnique.run();
+            case 7 -> PairSum.run();
+            case 8 -> TripletSum.run();
             case 9 -> FindDuplicate.run();
         }
     }
