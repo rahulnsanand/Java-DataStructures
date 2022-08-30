@@ -2,6 +2,7 @@ package com.rahulnsanand.javabrushup;
 // Created by Rahul Anand (C) 2022
 // This is the main file to run in order to access the whole project
 
+import com.rahulnsanand.javabrushup.arrays.ReturnArraySum;
 import com.rahulnsanand.javabrushup.functionsandscope.FahrenheitToCelsius;
 import com.rahulnsanand.javabrushup.functionsandscope.FibonacciNumber;
 import com.rahulnsanand.javabrushup.fundamentals.assignments.*;
@@ -36,6 +37,7 @@ public class Main {
             System.out.println("4 - Patterns");
             System.out.println("5 - Operators & For Loop");
             System.out.println("6 - Functions & Scope");
+            System.out.println("7 - Arrays");
 
             choice = scannerInput.nextInt();
             switch (choice) {
@@ -46,15 +48,15 @@ public class Main {
                 case 4 -> showPatterns();
                 case 5 -> showOperatorsForLoop();
                 case 6 -> showFunctionsAndScope();
-
+                case 7 -> showArrays();
             }
         }
 
     }
 
-    private static void showFunctionsAndScope() {
+    private static void showArrays() {
         Scanner scannerInput = new Scanner(System.in);
-        System.out.println("0 - Fahrenheit To Celsius Table");
+        System.out.println("0 - Return Array Sum");
         System.out.println("1 - Fibonacci Number");
         System.out.println("2 - ");
         System.out.println("3 - ");
@@ -63,12 +65,24 @@ public class Main {
 
         int choice = scannerInput.nextInt();
         switch (choice) {
-            case 0 -> FahrenheitToCelsius.run();
+            case 0 -> ReturnArraySum.run();
             case 1 -> FibonacciNumber.run();
             case 2 -> NumberStarPattern1.run();
             case 3 -> NumberStarPattern.run();
             case 4 -> Probability.run();
             case 5 -> MaximumNumber.run(1111);
+        }
+    }
+
+    private static void showFunctionsAndScope() {
+        Scanner scannerInput = new Scanner(System.in);
+        System.out.println("0 - Fahrenheit To Celsius Table");
+        System.out.println("1 - Fibonacci Number");
+
+        int choice = scannerInput.nextInt();
+        switch (choice) {
+            case 0 -> FahrenheitToCelsius.run();
+            case 1 -> FibonacciNumber.run();
         }
     }
 

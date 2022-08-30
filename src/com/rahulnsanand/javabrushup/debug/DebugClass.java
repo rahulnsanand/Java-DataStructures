@@ -6,9 +6,15 @@ public class DebugClass {
 
     public static void debugThis(){
 
-        System.out.print(isPrime(47));
+        int arr[] = new int[5];
+        arr[1] = 10;
+        arr = new int[2];
+        System.out.println(arr.length);
+
         System.out.println();
     }
+
+
     public static boolean isPrime(int x)
     {
         for(int i=2;i<x/2;i++)
