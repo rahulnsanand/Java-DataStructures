@@ -1,28 +1,20 @@
-package com.rahulnsanand.javabrushup.timecomplexity;
+package com.rahulnsanand.javabrushup.timecomplexity.assignment;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
-public class ArrayEquilibriumIndex {
-    public static int arrayEquilibriumIndex(int[] arr) {
+public class FindUniqueElement {
+    public static int findUnique(int[] arr) {
+        if(arr.length % 2!=0){
+            int listLen=arr.length;
+            int currentMask=0;
+            for(int i=0;i<listLen;i++){
+                currentMask=currentMask ^ arr[i];
+            }
 
-        int arrayLen = arr.length;
-
-        int sum = 0;
-        int leftsum = 0;
-
-        for (int i = 0; i < arrayLen; ++i)
-            sum += arr[i];
-
-        for (int i = 0; i < arrayLen; ++i) {
-            sum -= arr[i];
-
-            if (leftsum == sum)
-                return i;
-
-            leftsum += arr[i];
+            return currentMask;
         }
-
         return -1;
     }
 
@@ -55,13 +47,13 @@ public class ArrayEquilibriumIndex {
         System.out.println();
     }
 
-    public static void run() throws NumberFormatException, IOException {
+    public static void main(String[] args) throws NumberFormatException, IOException {
         int t = Integer.parseInt(br.readLine().trim());
 
         while(t > 0) {
 
             int[] arr = takeInput();
-            System.out.println(arrayEquilibriumIndex(arr));
+            System.out.println(findUnique(arr));
 
             t -= 1;
         }
