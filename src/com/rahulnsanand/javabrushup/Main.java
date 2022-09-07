@@ -19,7 +19,9 @@ import com.rahulnsanand.javabrushup.pattern.assignments.OddSquare;
 import com.rahulnsanand.javabrushup.pattern.assignments.ParallelogramPattern;
 import com.rahulnsanand.javabrushup.pattern.assignments.SumPattern;
 import com.rahulnsanand.javabrushup.test.*;
+import com.rahulnsanand.javabrushup.twodimensionalarrays.LargestRowSum;
 import com.rahulnsanand.javabrushup.twodimensionalarrays.RowWiseSum;
+import com.rahulnsanand.javabrushup.twodimensionalarrays.assignment.TotalSumOfBoundariesAndDiagonals;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -62,9 +64,9 @@ public class Main {
     private static void TwoDArrays() throws IOException {
         Scanner scannerInput = new Scanner(System.in);
         System.out.println("0 - Row Wise Sum");
+        System.out.println("1 - Largest Row Sum");
+        System.out.println("2 - Total Sum Of Boundaries And Diagonals");
 
-        System.out.println("1 - Linear Search");
-        System.out.println("2 - Arrange Numbers In Array");
         System.out.println("3 - Swap Alternate");
         System.out.println("4 - Find Unique");
         System.out.println("5 - Find Duplicate");
@@ -86,9 +88,9 @@ public class Main {
         int choice = scannerInput.nextInt();
         switch (choice) {
             case 0 -> RowWiseSum.run();
+            case 1 -> LargestRowSum.run();
+            case 2 -> TotalSumOfBoundariesAndDiagonals.run();
 
-            case 1 -> LinearSearch.run();
-            case 2 -> ArrangeNumbersInArray.run();
             case 3 -> SwapAlternate.run();
             case 4 -> FindUnique.run();
             case 5 -> FindDuplicate.run();

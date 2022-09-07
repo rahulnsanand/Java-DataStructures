@@ -6,15 +6,8 @@ public class DebugClass {
 
     public static void debugThis(){
 
-        int[][] arr = new int[2][2];
-        fun(arr);
-        for(int i=0;i<2;i++)
-        {
-            for(int j=0;j<2;j++)
-            {
-                System.out.print(arr[i][j]+" " );
-            }
-        }
+        int arr[][]=new int [4][];
+        System.out.print(arr[2].length);
 
 
         System.out.println();
