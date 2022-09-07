@@ -51,30 +51,22 @@ public class MergeTwoSortedArray {
         //Your code goes here
         int totalLen = arr1.length + arr2.length;
         int[] mergedArray = new int[totalLen];
-        int[] outputArray = new int[totalLen];
-        int position=0;
-        for(int ar1=0; ar1<arr1.length; ar1++){
-            mergedArray[position] = arr1[ar1];
-            position++;
-        }
-        for(int ar2=0; ar2<arr2.length; ar2++){
-            mergedArray[position] = arr2[ar2];
-            position++;
+        int i = 0, j = 0, k = 0;
+
+        while (i < arr1.length && j < arr2.length){
+            if (arr1[i] < arr2[j])
+                mergedArray[k++] = arr1[i++];
+            else
+                mergedArray[k++] = arr2[j++];
         }
 
-        //1 2 3 4
-        //3 4 5 6
-        int temp;
-        for(int i=0; i<totalLen; i++){
-            for(int j=i+1; j<totalLen-1; j++){
-                if(mergedArray[i] > mergedArray[j]){
-                    temp = mergedArray[j];
-                    mergedArray[j] = mergedArray[i];
-                    mergedArray[i] = temp;
-                }
-            }
+        while (i < arr1.length){
+            mergedArray[k++] = arr1[i++];
         }
 
+        while (j < arr2.length){
+            mergedArray[k++] = arr2[j++];
+        }
 
         return mergedArray;
     }
