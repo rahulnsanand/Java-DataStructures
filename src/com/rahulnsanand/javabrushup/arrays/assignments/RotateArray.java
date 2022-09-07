@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class SortZeroOneTwo {
+public class RotateArray {
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -40,36 +40,32 @@ public class SortZeroOneTwo {
         while(t > 0) {
 
             int[] input = takeInput();
-            sort012(input);
+            int d = Integer.parseInt(br.readLine().trim());
+            rotate(input, d);
             printArray(input);
 
             t -= 1;
         }
     }
 
+    public static void rotate(int[] arr, int d) {
+        int[] firstHalf = new int[d];
 
-    public static void sort012(int[] arr){
-        int i=0 ,  countZero=0 , countOne=0 ,  countTwo=0, size=arr.length;;
-        while(i<size){
-            if (arr[i]==0){
-                countZero = countZero + 1 ;
-            }
-            else if (arr[i]==1){
-                countOne = countOne+1 ;
-            }
-            else{
-                countTwo = countTwo+2 ;
-            }
-            i = i+1;
+        for(int i=0; i<d; i++){
+            firstHalf[i] = arr[i];
         }
-        for(i=0; i<countZero; i++){
-            arr[i] = 0 ;
+
+        int temp;
+        for(int i=0; i<arr.length-d-1; i++){
+            temp = arr[i];
+            arr[i] = arr[i+1];
+            arr[i+1] = temp;
         }
-        for(i=countZero; i<countZero+countOne; i++){
-            arr[i] = 1 ;
+        int position = 0;
+        for(int i=(arr.length-d); i<arr.length; i++){
+            arr[i] = firstHalf[position];
+            position++;
         }
-        for(i=countZero+countOne; i<size; i++){
-            arr[i] = 2 ;
-        }
+
     }
 }

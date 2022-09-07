@@ -2,10 +2,7 @@ package com.rahulnsanand.javabrushup;
 // Created by Rahul Anand (C) 2022
 // This is the main file to run in order to access the whole project
 
-import com.rahulnsanand.javabrushup.arrays.ArrangeNumbersInArray;
-import com.rahulnsanand.javabrushup.arrays.LinearSearch;
-import com.rahulnsanand.javabrushup.arrays.ReturnArraySum;
-import com.rahulnsanand.javabrushup.arrays.SwapAlternate;
+import com.rahulnsanand.javabrushup.arrays.*;
 import com.rahulnsanand.javabrushup.arrays.assignments.*;
 import com.rahulnsanand.javabrushup.functionsandscope.FahrenheitToCelsius;
 import com.rahulnsanand.javabrushup.functionsandscope.FibonacciNumber;
@@ -70,7 +67,14 @@ public class Main {
         System.out.println("6 - Intersection Of Two Arrays");
         System.out.println("7 - Pair Sum");
         System.out.println("8 - Triplet Sum");
-        System.out.println("9 - ");
+        System.out.println("9 - Binary Search");
+        System.out.println("10 - Selection Sort");
+        System.out.println("11 - Bubble Sort");
+        System.out.println("12 - Insertion Sort");
+        System.out.println("13 - Push Zero To End");
+        System.out.println("14 - Sort Zero One Two");
+        System.out.println("15 - Sum Of Two Array");
+        System.out.println("16 - Rotate Array");
 
         int choice = scannerInput.nextInt();
         switch (choice) {
@@ -83,7 +87,14 @@ public class Main {
             case 6 -> IntersectionOfTwoArrays.run();
             case 7 -> PairSum.run();
             case 8 -> TripletSum.run();
-            case 9 -> FindDuplicate.run();
+            case 9 -> BinarySearch.run();
+            case 10 -> SelectionSort.run();
+            case 11 -> BubbleSort.run();
+            case 12 -> InsertionSort.run();
+            case 13 -> PushZeroToEnd.run();
+            case 14 -> SortZeroOneTwo.run();
+            case 15 -> SumOfTwoArray.run();
+            case 16 -> RotateArray.run();
         }
     }
 

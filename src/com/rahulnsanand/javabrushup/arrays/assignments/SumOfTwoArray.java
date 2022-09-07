@@ -35,7 +35,7 @@ public class SumOfTwoArray {
         System.out.println();
     }
 
-    public static void main(String[] args) throws NumberFormatException, IOException {
+    public static void run() throws NumberFormatException, IOException {
         int t = Integer.parseInt(br.readLine().trim());
 
         while(t > 0) {
