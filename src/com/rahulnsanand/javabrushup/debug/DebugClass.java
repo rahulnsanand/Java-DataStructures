@@ -5,11 +5,12 @@ import java.util.Scanner;
 public class DebugClass {
 
     public static void debugThis(){
-        String a="coding";
-        for(int i=2;i<5;i++)
+        StringBuffer str1=new StringBuffer("");
+        for(int i=0;i<5;i++)
         {
-            System.out.print(a.substring(i-2,i+1));
+            str1.append((char)('a'+i));
         }
+        System.out.println(str1);
 
         System.out.println();
     }
