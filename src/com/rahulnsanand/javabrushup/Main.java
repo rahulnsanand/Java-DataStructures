@@ -19,6 +19,7 @@ import com.rahulnsanand.javabrushup.pattern.assignments.OddSquare;
 import com.rahulnsanand.javabrushup.pattern.assignments.ParallelogramPattern;
 import com.rahulnsanand.javabrushup.pattern.assignments.SumPattern;
 import com.rahulnsanand.javabrushup.test.*;
+import com.rahulnsanand.javabrushup.twodimensionalarrays.RowWiseSum;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -40,6 +41,7 @@ public class Main {
             System.out.println("5 - Operators & For Loop");
             System.out.println("6 - Functions & Scope");
             System.out.println("7 - Arrays");
+            System.out.println("8 - 2D Arrays");
 
             choice = scannerInput.nextInt();
             switch (choice) {
@@ -51,9 +53,60 @@ public class Main {
                 case 5 -> showOperatorsForLoop();
                 case 6 -> showFunctionsAndScope();
                 case 7 -> showArrays();
+                case 8 -> TwoDArrays();
             }
         }
 
+    }
+
+    private static void TwoDArrays() throws IOException {
+        Scanner scannerInput = new Scanner(System.in);
+        System.out.println("0 - Row Wise Sum");
+
+        System.out.println("1 - Linear Search");
+        System.out.println("2 - Arrange Numbers In Array");
+        System.out.println("3 - Swap Alternate");
+        System.out.println("4 - Find Unique");
+        System.out.println("5 - Find Duplicate");
+        System.out.println("6 - Intersection Of Two Arrays");
+        System.out.println("7 - Pair Sum");
+        System.out.println("8 - Triplet Sum");
+        System.out.println("9 - Binary Search");
+        System.out.println("10 - Selection Sort");
+        System.out.println("11 - Bubble Sort");
+        System.out.println("12 - Insertion Sort");
+        System.out.println("13 - Push Zero To End");
+        System.out.println("14 - Sort Zero One Two");
+        System.out.println("15 - Sum Of Two Array");
+        System.out.println("16 - Rotate Array");
+        System.out.println("17 - Second Largest In Array");
+        System.out.println("18 - Check Array Rotation");
+        System.out.println("19 - Merge Two Sorted Array");
+
+        int choice = scannerInput.nextInt();
+        switch (choice) {
+            case 0 -> RowWiseSum.run();
+
+            case 1 -> LinearSearch.run();
+            case 2 -> ArrangeNumbersInArray.run();
+            case 3 -> SwapAlternate.run();
+            case 4 -> FindUnique.run();
+            case 5 -> FindDuplicate.run();
+            case 6 -> IntersectionOfTwoArrays.run();
+            case 7 -> PairSum.run();
+            case 8 -> TripletSum.run();
+            case 9 -> BinarySearch.run();
+            case 10 -> SelectionSort.run();
+            case 11 -> BubbleSort.run();
+            case 12 -> InsertionSort.run();
+            case 13 -> PushZeroToEnd.run();
+            case 14 -> SortZeroOneTwo.run();
+            case 15 -> SumOfTwoArray.run();
+            case 16 -> RotateArray.run();
+            case 17 -> SecondLargestInArray.run();
+            case 18 -> CheckArrayRotation.run();
+            case 19 -> MergeTwoSortedArray.run();
+        }
     }
 
     private static void showArrays() throws IOException {
@@ -79,11 +132,6 @@ public class Main {
         System.out.println("18 - Check Array Rotation");
         System.out.println("19 - Merge Two Sorted Array");
 
-        System.out.println("20 - Selection Sort");
-        System.out.println("21 - Bubble Sort");
-        System.out.println("22 - Insertion Sort");
-        System.out.println("23 - Push Zero To End");
-
         int choice = scannerInput.nextInt();
         switch (choice) {
             case 0 -> ReturnArraySum.run();
@@ -106,11 +154,6 @@ public class Main {
             case 17 -> SecondLargestInArray.run();
             case 18 -> CheckArrayRotation.run();
             case 19 -> MergeTwoSortedArray.run();
-
-            case 20 -> SelectionSort.run();
-            case 21 -> BubbleSort.run();
-            case 22 -> InsertionSort.run();
-            case 23 -> PushZeroToEnd.run();
         }
     }
 
