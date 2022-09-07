@@ -9,15 +9,25 @@ public class RemoveConsecutiveDuplicates {
 
     public static String removeConsecutiveDuplicates(String str) {
         //Your code goes here
-        if(str.length()<=1)
-            return str;
-        if(str.charAt(0)==str.charAt(1))
-            return removeConsecutiveDuplicates(str.substring(1));
-        else
-            return str.charAt(0) + removeConsecutiveDuplicates(str.substring(1));
+        if (str == null) {
+            return null;
+        }
+
+        char[] chars = str.toCharArray();
+        char prev = 0;
+        int k = 0;
+
+        for (char c: chars) {
+            if (prev != c) {
+                chars[k++] = c;
+                prev = c;
+            }
+        }
+
+        return new String(chars).substring(0, k);
     }
 
-    public static void main (String [] args) throws NumberFormatException, IOException {
+    public static void run() throws NumberFormatException, IOException {
         String str = br.readLine();
         if (str != null) {
             str = str.trim ();
