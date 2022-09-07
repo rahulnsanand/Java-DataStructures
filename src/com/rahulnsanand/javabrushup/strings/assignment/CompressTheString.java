@@ -33,7 +33,7 @@ public class CompressTheString {
 
     static BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
 
-    public static void main (String [] args) throws NumberFormatException, IOException {
+    public static void run() throws NumberFormatException, IOException {
         String str = br.readLine ();
         if (str != null) {
             str = str.trim ();
