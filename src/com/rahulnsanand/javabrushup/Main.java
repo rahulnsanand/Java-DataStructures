@@ -77,7 +77,8 @@ public class Main {
         System.out.println("16 - Rotate Array");
         System.out.println("17 - Second Largest In Array");
         System.out.println("18 - Check Array Rotation");
-        System.out.println("19 - Binary Search");
+        System.out.println("19 - Merge Two Sorted Array");
+
         System.out.println("20 - Selection Sort");
         System.out.println("21 - Bubble Sort");
         System.out.println("22 - Insertion Sort");
@@ -104,7 +105,8 @@ public class Main {
             case 16 -> RotateArray.run();
             case 17 -> SecondLargestInArray.run();
             case 18 -> CheckArrayRotation.run();
-            case 19 -> BinarySearch.run();
+            case 19 -> MergeTwoSortedArray.run();
+
             case 20 -> SelectionSort.run();
             case 21 -> BubbleSort.run();
             case 22 -> InsertionSort.run();
