@@ -50,20 +50,23 @@ public class RotateArray {
 
     public static void rotate(int[] arr, int d) {
         int[] firstHalf = new int[d];
+        int[] secondHalf = new int[arr.length-d];
 
         for(int i=0; i<d; i++){
             firstHalf[i] = arr[i];
         }
-
-        int temp;
-        for(int i=0; i<arr.length-d-1; i++){
-            temp = arr[i];
-            arr[i] = arr[i+1];
-            arr[i+1] = temp;
+        int inputPosition = d;
+        for(int i=0; i<secondHalf.length; i++){
+            secondHalf[i] = arr[inputPosition];
+            inputPosition++;
         }
         int position = 0;
-        for(int i=(arr.length-d); i<arr.length; i++){
-            arr[i] = firstHalf[position];
+        for(int i=0; i<secondHalf.length; i++){
+            arr[i] = secondHalf[i];
+            position++;
+        }
+        for(int i=0; i<firstHalf.length; i++){
+            arr[position] = firstHalf[i];
             position++;
         }
 
