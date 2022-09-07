@@ -21,6 +21,7 @@ import com.rahulnsanand.javabrushup.pattern.assignments.SumPattern;
 import com.rahulnsanand.javabrushup.test.*;
 import com.rahulnsanand.javabrushup.twodimensionalarrays.LargestRowSum;
 import com.rahulnsanand.javabrushup.twodimensionalarrays.RowWiseSum;
+import com.rahulnsanand.javabrushup.twodimensionalarrays.assignment.PrintSpiral;
 import com.rahulnsanand.javabrushup.twodimensionalarrays.assignment.TotalSumOfBoundariesAndDiagonals;
 
 import java.io.IOException;
@@ -66,8 +67,8 @@ public class Main {
         System.out.println("0 - Row Wise Sum");
         System.out.println("1 - Largest Row Sum");
         System.out.println("2 - Total Sum Of Boundaries And Diagonals");
+        System.out.println("3 - Print Spiral");
 
-        System.out.println("3 - Swap Alternate");
         System.out.println("4 - Find Unique");
         System.out.println("5 - Find Duplicate");
         System.out.println("6 - Intersection Of Two Arrays");
@@ -90,8 +91,8 @@ public class Main {
             case 0 -> RowWiseSum.run();
             case 1 -> LargestRowSum.run();
             case 2 -> TotalSumOfBoundariesAndDiagonals.run();
+            case 3 -> PrintSpiral.run();
 
-            case 3 -> SwapAlternate.run();
             case 4 -> FindUnique.run();
             case 5 -> FindDuplicate.run();
             case 6 -> IntersectionOfTwoArrays.run();
