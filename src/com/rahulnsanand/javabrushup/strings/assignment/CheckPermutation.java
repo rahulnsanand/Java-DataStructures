@@ -26,7 +26,7 @@ public class CheckPermutation {
     }
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-    public static void main(String[] args) throws NumberFormatException, IOException {
+    public static void run() throws NumberFormatException, IOException {
         String str1 = br.readLine();
         if (str1 != null) {
             str1 = str1.trim();
