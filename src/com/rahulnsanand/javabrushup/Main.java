@@ -75,6 +75,13 @@ public class Main {
         System.out.println("14 - Sort Zero One Two");
         System.out.println("15 - Sum Of Two Array");
         System.out.println("16 - Rotate Array");
+        System.out.println("17 - Second Largest In Array");
+        System.out.println("18 - Check Array Rotation");
+        System.out.println("19 - Binary Search");
+        System.out.println("20 - Selection Sort");
+        System.out.println("21 - Bubble Sort");
+        System.out.println("22 - Insertion Sort");
+        System.out.println("23 - Push Zero To End");
 
         int choice = scannerInput.nextInt();
         switch (choice) {
@@ -95,6 +102,13 @@ public class Main {
             case 14 -> SortZeroOneTwo.run();
             case 15 -> SumOfTwoArray.run();
             case 16 -> RotateArray.run();
+            case 17 -> SecondLargestInArray.run();
+            case 18 -> CheckArrayRotation.run();
+            case 19 -> BinarySearch.run();
+            case 20 -> SelectionSort.run();
+            case 21 -> BubbleSort.run();
+            case 22 -> InsertionSort.run();
+            case 23 -> PushZeroToEnd.run();
         }
     }
 
