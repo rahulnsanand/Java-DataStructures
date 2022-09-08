@@ -5,12 +5,7 @@ import java.util.Scanner;
 public class DebugClass {
 
     public static void debugThis(){
-        StringBuffer str1=new StringBuffer("");
-        for(int i=0;i<5;i++)
-        {
-            str1.append((char)('a'+i));
-        }
-        System.out.println(str1);
+
 
         System.out.println();
     }
