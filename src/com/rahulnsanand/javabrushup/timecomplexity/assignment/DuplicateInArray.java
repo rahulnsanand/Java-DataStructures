@@ -2,14 +2,17 @@ package com.rahulnsanand.javabrushup.timecomplexity.assignment;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class DuplicateInArray {
     public static int findDuplicate(int[] arr) {
         //Your code goes here
-        for(int i = 0; i < arr.length; i++) {
-            for(int j = i + 1; j < arr.length; j++) {
-                if(arr[i] == arr[j])
-                    return arr[j];
+
+        Arrays.sort(arr);
+
+        for(int i=0; i<arr.length-1; i++){
+            if(arr[i]==arr[i+1]){
+                return arr[i];
             }
         }
 
