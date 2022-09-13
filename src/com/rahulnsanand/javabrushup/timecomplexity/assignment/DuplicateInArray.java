@@ -2,20 +2,18 @@ package com.rahulnsanand.javabrushup.timecomplexity.assignment;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
 
-public class TripletSum {
-
-    public static int tripletSum(int[] arr, int num) {
-        ArrayList <ArrayList<Integer>> ans = new ArrayList<>();
-        int n = arr.length, counter = 0;
-        Arrays.sort(arr);
-
-        for (int i = 0; i < n; i++) {
-
+public class DuplicateInArray {
+    public static int findDuplicate(int[] arr) {
+        //Your code goes here
+        for(int i = 0; i < arr.length; i++) {
+            for(int j = i + 1; j < arr.length; j++) {
+                if(arr[i] == arr[j])
+                    return arr[j];
+            }
         }
 
-        return counter;
+        return -1;
     }
 
 
@@ -53,9 +51,8 @@ public class TripletSum {
 
         while(t > 0) {
 
-            int[] arr = takeInput();
-            int num = Integer.parseInt(br.readLine().trim());
-            System.out.println(tripletSum(arr, num));
+            int[] input = takeInput();
+            System.out.println(findDuplicate(input));
 
             t -= 1;
         }

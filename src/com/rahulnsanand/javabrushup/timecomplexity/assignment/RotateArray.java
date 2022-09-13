@@ -2,23 +2,30 @@ package com.rahulnsanand.javabrushup.timecomplexity.assignment;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
 
-public class TripletSum {
+public class RotateArray {
+    public static void rotate(int[] arr, int num) {
+        //Your code goes here
+        int n = arr.length;
+        int temp[] = new int[n];
 
-    public static int tripletSum(int[] arr, int num) {
-        ArrayList <ArrayList<Integer>> ans = new ArrayList<>();
-        int n = arr.length, counter = 0;
-        Arrays.sort(arr);
+        int k = 0;
 
-        for (int i = 0; i < n; i++) {
-
+        for (int i = num; i < n; i++) {
+            temp[k] = arr[i];
+            k++;
         }
 
-        return counter;
+        for (int i = 0; i < num; i++) {
+            temp[k] = arr[i];
+            k++;
+        }
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = temp[i];
+        }
+
     }
-
-
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static int[] takeInput() throws IOException {
@@ -53,9 +60,10 @@ public class TripletSum {
 
         while(t > 0) {
 
-            int[] arr = takeInput();
-            int num = Integer.parseInt(br.readLine().trim());
-            System.out.println(tripletSum(arr, num));
+            int[] input = takeInput();
+            int d = Integer.parseInt(br.readLine().trim());
+            rotate(input, d);
+            printArray(input);
 
             t -= 1;
         }
