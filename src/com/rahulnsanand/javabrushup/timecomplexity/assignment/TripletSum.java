@@ -5,65 +5,19 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 public class TripletSum {
+
     public static int tripletSum(int[] arr, int num) {
         ArrayList <ArrayList<Integer>> ans = new ArrayList<>();
         int n = arr.length, counter = 0;
         Arrays.sort(arr);
 
         for (int i = 0; i < n; i++) {
-            int target = num-arr[i];
-            int front = i + 1;
-            int back = n - 1;
 
-            while (front < back) {
-                int sum = arr[front] + arr[back];
-
-                // Finding answer which starts from arr[i].
-                if (sum < target) {
-                    front++;
-                }
-                else if (sum > target) {
-                    back--;
-                }
-                else {
-                    int x = arr[front];
-                    int y = arr[back];
-
-                    ArrayList<Integer> list = new ArrayList<>();
-
-                    list.add(arr[i]);
-                    list.add(arr[front]);
-                    list.add(arr[back]);
-                    counter++;
-
-                    // Incrementing front pointer until we reach a different number.
-                    while (front < back && arr[front] == x) {
-                        front++;
-                    }
-
-                    // Decrementing last pointer until we reach a different number.
-                    while (front < back && arr[back] == y) {
-                        back--;
-                    }
-                }
-            }
-            // Ensuring that we don't encounter duplicate values for arr[i].
-            while (i + 1 < n && arr[i] == arr[i + 1]) {
-                i++;
-            }
         }
+
         return counter;
     }
 
-    static void quickSort(int A[], int si, int ei) {
-        int pi;
-
-        if (si < ei) {
-            pi = partition(A, si, ei);
-            quickSort(A, si, pi - 1);
-            quickSort(A, pi + 1, ei);
-        }
-    }
     static int partition(int A[], int si, int ei) {
         int x = A[ei];
         int i = (si - 1);
@@ -111,7 +65,7 @@ public class TripletSum {
         System.out.println();
     }
 
-    public static void main(String[] args) throws NumberFormatException, IOException {
+    public static void run() throws NumberFormatException, IOException {
         int t = Integer.parseInt(br.readLine().trim());
 
         while(t > 0) {
