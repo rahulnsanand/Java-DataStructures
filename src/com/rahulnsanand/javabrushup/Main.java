@@ -46,6 +46,7 @@ public class Main {
             System.out.println("7 - Arrays");
             System.out.println("8 - 2D Arrays");
             System.out.println("9 - Strings");
+            System.out.println("10 - Time Complexity");
 
             choice = scannerInput.nextInt();
             switch (choice) {
@@ -59,10 +60,33 @@ public class Main {
                 case 7 -> showArrays();
                 case 8 -> showTwoDArrays();
                 case 9 -> showStrings();
+                case 10 -> showTimeComplexity();
 
             }
         }
 
+    }
+
+    private static void showTimeComplexity() throws IOException {
+        Scanner scannerInput = new Scanner(System.in);
+        System.out.println("0 - Row Wise Sum");
+        System.out.println("1 - Largest Row Sum");
+        System.out.println("2 - Total Sum Of Boundaries And Diagonals");
+        System.out.println("3 - Print Spiral");
+        System.out.println("4 - Largest Row Sum");
+        System.out.println("5 - Total Sum Of Boundaries And Diagonals");
+        System.out.println("6 - Triplet Sum");
+
+        int choice = scannerInput.nextInt();
+        switch (choice) {
+            case 0 -> RowWiseSum.run();
+            case 1 -> LargestRowSum.run();
+            case 2 -> TotalSumOfBoundariesAndDiagonals.run();
+            case 3 -> PrintSpiral.run();
+            case 4 -> LargestRowSum.run();
+            case 5 -> TotalSumOfBoundariesAndDiagonals.run();
+            case 6 -> TripletSum.run();
+        }
     }
 
     private static void showStrings() throws IOException {

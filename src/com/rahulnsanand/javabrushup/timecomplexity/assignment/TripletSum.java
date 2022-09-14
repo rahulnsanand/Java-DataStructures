@@ -7,17 +7,50 @@ import java.util.*;
 public class TripletSum {
 
     public static int tripletSum(int[] arr, int num) {
-        ArrayList <ArrayList<Integer>> ans = new ArrayList<>();
-        int n = arr.length, counter = 0;
+        int n = arr.length, counter = 0, newTargetSum;
         Arrays.sort(arr);
 
-        for (int i = 0; i < n; i++) {
+        for (int i=0; i<n; i++) {
+            newTargetSum = num-arr[i];
+            int leftIndex = i+1;
+            int rightIndex = arr.length - 1;
 
+            while (leftIndex < rightIndex) {
+                int sumValue = arr[leftIndex] + arr[rightIndex];
+
+                if(sumValue < newTargetSum){
+                    leftIndex++;
+                } else if(sumValue > newTargetSum){
+                    rightIndex--;
+                } else {
+                    if(arr[leftIndex]==arr[rightIndex]){
+                        int numOfSameValues = rightIndex - leftIndex;
+                        int countValue = (numOfSameValues*(numOfSameValues+1))/2;
+                        counter += countValue;
+                        break;
+                    }
+                    int noOfSameLeftElements = 1;
+                    int noOfSameRightElements = 1;
+                    while(arr[leftIndex]==arr[leftIndex+1]){
+                        noOfSameLeftElements++;
+                        leftIndex++;
+                    }
+                    while(arr[rightIndex]==arr[rightIndex-1]){
+                        noOfSameRightElements++;
+                        rightIndex--;
+                    }
+
+                    int numOfSameLeftAndRightElement = noOfSameLeftElements * noOfSameRightElements;
+
+                    counter += numOfSameLeftAndRightElement;
+                    leftIndex++;
+                    rightIndex--;
+                }
+            }
         }
 
         return counter;
     }
-
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
