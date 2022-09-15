@@ -1,6 +1,5 @@
 package com.rahulnsanand.javabrushup.test;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class FindMaximumSubArray {
@@ -10,27 +9,11 @@ public class FindMaximumSubArray {
         int size = sc.nextInt();
         int[] inputArray = new int[size];
         int kValue = sc.nextInt();
-        long maxSumValue = Integer.MIN_VALUE;
-        int currentSumValue;
 
         for(int i=0; i<size; i++){
             inputArray[i]=sc.nextInt();
         }
 
-
-        for(int i=0; i<=size-kValue;i++){
-            currentSumValue = 0;
-            for(int j=i; j<(i+kValue); j++){
-                currentSumValue += inputArray[j];
-            }
-            if(currentSumValue>maxSumValue){
-                maxSumValue = currentSumValue;
-            }
-        }
-
-
-
-//        System.out.println(maxSumValue);
         calcSum(inputArray, inputArray.length, kValue);
     }
 
