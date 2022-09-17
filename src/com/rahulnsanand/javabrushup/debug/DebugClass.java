@@ -5,18 +5,17 @@ import java.util.Scanner;
 public class DebugClass {
 
     public static void debugThis(){
-        String str1 = new String ("I love coding");
-        String str2 = "I love coding";
-        boolean check=(str1=="I love coding");
-        System.out.println((str1 == str2) + " " + str1.equals(str2)+" " + check);
 
         System.out.println();
     }
 
-    public static int [] change(int input[]){
-        input = new int[5];
-        input[3] = 15;
-        return input;
-    }
 
+    public static void towerOfHanoi(int disks, char source, char auxiliary, char destination) {
+        // Write your code here
+        if (disks == 1) {
+            return;
+        }
+        towerOfHanoi(disks-1, source, auxiliary, destination);
+        towerOfHanoi(disks-1, auxiliary, destination, source);
+    }
 }
