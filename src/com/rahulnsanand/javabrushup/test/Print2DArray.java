@@ -1,5 +1,4 @@
 package com.rahulnsanand.javabrushup.test;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Print2DArray {
