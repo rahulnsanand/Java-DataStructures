@@ -29,6 +29,7 @@ import java.util.Scanner;
 
 public class Main {
 
+
     public static void main(String[] args) throws IOException {
         boolean repeatCheck = true;
         Scanner scannerInput = new Scanner(System.in);
