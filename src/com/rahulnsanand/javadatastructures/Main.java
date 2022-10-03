@@ -120,18 +120,17 @@ public class Main {
             case 6 -> EliminateDuplicatesFromLL.run();
             case 7 -> PrintReverseLL.run();
             case 8 -> PalindromeLL.run();
-
             case 9 -> DeleteNodeRecursive.run();
             case 10 -> ReverseLinkedListRecursive.run();
             case 11 -> MidPointLinkedList.run();
             case 12 -> MergeTwoSortedLL.run();
             case 13 -> MergeSortLL.run();
-            case 14 -> AppendLastNToFirst.run();
-            case 15 -> EliminateDuplicatesFromLL.run();
-            case 16 -> PrintReverseLL.run();
-            case 17 -> PalindromeLL.run();
-            case 18 -> PrintReverseLL.run();
-            case 19 -> PalindromeLL.run();
+            case 14 -> FindNodeLLRecursive.run();
+            case 15 -> EventAfterOddLinkedList.run();
+            case 16 -> DeleteEveryNNode.run();
+            case 17 -> SwapTwoNodesOfLL.run();
+            case 18 -> KReverseLL.run();
+            case 19 -> BubbleSortIteratingLL.run();
         }
     }
 
