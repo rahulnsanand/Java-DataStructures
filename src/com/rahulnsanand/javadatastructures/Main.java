@@ -21,6 +21,7 @@ import com.rahulnsanand.javadatastructures.pattern.assignments.SumPattern;
 import com.rahulnsanand.javadatastructures.recursion.CalculatePower;
 import com.rahulnsanand.javadatastructures.recursion.FirstNNaturalNumbers;
 import com.rahulnsanand.javadatastructures.recursion.NumberOfDigits;
+import com.rahulnsanand.javadatastructures.recursion.SumOfArray;
 import com.rahulnsanand.javadatastructures.test.*;
 import com.rahulnsanand.javadatastructures.timecomplexity.ArrayEquilibriumIndex;
 import com.rahulnsanand.javadatastructures.timecomplexity.ArrayIntersection;
@@ -93,7 +94,7 @@ public class Main {
             case 0 -> CalculatePower.run();
             case 1 -> NumberOfDigits.run();
             case 2 -> FirstNNaturalNumbers.run();
-            case 3 -> DuplicateInArray.run();
+            case 3 -> SumOfArray.run();
             case 4 -> PairSumInArray.run();
             case 5 -> TripletSum.run();
             case 6 -> RotateArray.run();
