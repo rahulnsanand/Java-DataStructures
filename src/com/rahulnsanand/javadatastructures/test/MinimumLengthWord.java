@@ -16,7 +16,7 @@ public class MinimumLengthWord {
         return shortestWord;
 
     }
-    public static void main(String[] args) {
+    public static void run() {
         Scanner s = new Scanner(System.in);
         String str = s.nextLine();
 

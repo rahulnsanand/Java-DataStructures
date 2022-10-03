@@ -196,12 +196,12 @@ public class Main {
         System.out.println("3 - Number Star Pattern");
         System.out.println("4 - Probability");
         System.out.println("5 - Maximum Number");
-        System.out.println("6 - ");
-        System.out.println("7 - ");
-        System.out.println("8 - ");
-        System.out.println("9 - ");
-        System.out.println("10 - ");
-        System.out.println("11 - ");
+        System.out.println("6 - Find Leaders In Array");
+        System.out.println("7 - Minimum Length Word");
+        System.out.println("8 - Maximise Sum");
+        System.out.println("9 - Rectangular Numbers");
+        System.out.println("10 - Find Maximum Sub Array");
+        System.out.println("11 - Faulty Keyboard");
         System.out.println("12 - ");
         System.out.println("13 - ");
         System.out.println("14 - ");
@@ -218,12 +218,13 @@ public class Main {
             case 3 -> NumberStarPattern.run();
             case 4 -> Probability.run();
             case 5 -> MaximumNumber.run(1111);
-            case 6 -> AlphaPattern.run();
-            case 7 -> CharacterPattern.run();
-            case 8 -> TriangleCharacterPattern.run();
-            case 9 -> InterestingAlphabets.run();
-            case 10 -> MirrorImageNumberPattern.run();
-            case 11 -> InvertedNumberPattern.run();
+            case 6 -> FindLeadersInArray.run();
+            case 7 -> MinimumLengthWord.run();
+            case 8 -> MaximiseSum.run();
+            case 9 -> RectangularNumbers.run();
+            case 10 -> FindMaximumSubArray.run();
+            case 11 -> FaultyKeyboard.run();
+            // Bookmark
             case 12 -> StarPattern.run();
             case 13 -> TriangleOfNumbers.run();
             case 14 -> DiamondOfStars.run();

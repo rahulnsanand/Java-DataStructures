@@ -41,7 +41,7 @@ public class MaximiseSum {
         maxsum+=max(s1,s2);
         return maxsum;
     }
-    public static void main(String[] args) {
+    public static void run() {
         Scanner s = new Scanner(System.in);
         int m = s.nextInt();
         int input1[] = new int[m];

@@ -3,7 +3,7 @@ package com.rahulnsanand.javadatastructures.test;
 import java.util.Scanner;
 
 public class FindMaximumSubArray {
-    public static void main(String[] args) {
+    public static void run() {
         // Write your code here
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();

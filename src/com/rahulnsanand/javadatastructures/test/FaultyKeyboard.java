@@ -1,7 +1,25 @@
 package com.rahulnsanand.javadatastructures.test;
 
+import java.util.Scanner;
+
 public class FaultyKeyboard {
 
+    public static void run() {
+        // Write your code here
+        Scanner sc = new Scanner(System.in);
+
+        int numberOfValues = sc.nextInt();
+
+        while(numberOfValues > 0){
+            String expectedWord = sc.next();
+            String keyboardUnderstoodWord = sc.next();
+
+
+            System.out.println(faultyKeyboard(expectedWord, keyboardUnderstoodWord));
+
+            numberOfValues--;
+        }
+    }
     public static boolean faultyKeyboard(String expectedWord, String keyboardUnderstoodWord) {
         int n = expectedWord.length();
         int m = keyboardUnderstoodWord.length();
