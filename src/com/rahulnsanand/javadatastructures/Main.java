@@ -83,8 +83,13 @@ public class Main {
         System.out.println("2 - Print First N Natural Numbers");
         System.out.println("3 - Sum Of Array - Recursion");
         System.out.println("4 - Check Number In Array");
-        System.out.println("5 - First Index Of A Number In An");
-        System.out.println("6 - Last Index Of A Number ");
+        System.out.println("5 - First Index Of A Number In Array");
+        System.out.println("6 - Last Index Of A Number In Array");
+        System.out.println("7 - Remove X");
+        System.out.println("8 - Remove Duplicates Recursively");
+        System.out.println("9 - Merge Sort Recursive");
+        System.out.println("10 - Quick Sort Recursive");
+        System.out.println("11 - Tower Of Hanoi Recursive");
 
         int choice = scannerInput.nextInt();
         switch (choice) {
@@ -95,6 +100,11 @@ public class Main {
             case 4 -> CheckNumberInArray.run();
             case 5 -> FirstIndexOfNumberInArray.run();
             case 6 -> LastIndexOfNumberInArray.run();
+            case 7 -> RemoveX.run();
+            case 8 -> RemoveDuplicatesRecursively.run();
+            case 9 -> MergeSortRecursive.run();
+            case 10 -> QuickSortRecursive.run();
+            case 11 -> TowerOfHanoiRecursive.run();
         }
     }
 
