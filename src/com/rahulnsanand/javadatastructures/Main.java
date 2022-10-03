@@ -18,10 +18,7 @@ import com.rahulnsanand.javadatastructures.pattern.assignments.HalfDiamondPatter
 import com.rahulnsanand.javadatastructures.pattern.assignments.OddSquare;
 import com.rahulnsanand.javadatastructures.pattern.assignments.ParallelogramPattern;
 import com.rahulnsanand.javadatastructures.pattern.assignments.SumPattern;
-import com.rahulnsanand.javadatastructures.recursion.CalculatePower;
-import com.rahulnsanand.javadatastructures.recursion.FirstNNaturalNumbers;
-import com.rahulnsanand.javadatastructures.recursion.NumberOfDigits;
-import com.rahulnsanand.javadatastructures.recursion.SumOfArray;
+import com.rahulnsanand.javadatastructures.recursion.*;
 import com.rahulnsanand.javadatastructures.test.*;
 import com.rahulnsanand.javadatastructures.timecomplexity.ArrayEquilibriumIndex;
 import com.rahulnsanand.javadatastructures.timecomplexity.ArrayIntersection;
@@ -95,9 +92,9 @@ public class Main {
             case 1 -> NumberOfDigits.run();
             case 2 -> FirstNNaturalNumbers.run();
             case 3 -> SumOfArray.run();
-            case 4 -> PairSumInArray.run();
-            case 5 -> TripletSum.run();
-            case 6 -> RotateArray.run();
+            case 4 -> CheckNumberInArray.run();
+            case 5 -> FirstIndexOfNumberInArray.run();
+            case 6 -> LastIndexOfNumberInArray.run();
         }
     }
 
