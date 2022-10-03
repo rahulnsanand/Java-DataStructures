@@ -18,7 +18,7 @@ public class MaximumProfitApp {
         return outputValue;
     }
 
-    public static void main(String[] args) {
+    public static void run() {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int input[] = new int[n];

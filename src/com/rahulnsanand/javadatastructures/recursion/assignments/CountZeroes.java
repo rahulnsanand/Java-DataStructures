@@ -20,7 +20,7 @@ public class CountZeroes {
         return countValue;
     }
 
-    public static void main(String[] args) {
+    public static void run() {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(countZerosRec(n));

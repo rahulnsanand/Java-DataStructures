@@ -29,7 +29,7 @@ public class Print2DArray {
         return input;
     }
 
-    public static void main(String[] args) {
+    public static void run() {
         int[][] input = takeInput();
         print2DArray(input);
     }

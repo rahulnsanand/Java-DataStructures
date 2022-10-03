@@ -17,7 +17,7 @@ public class GeometricSum {
     }
 
 
-    public static void main(String[] args) {
+    public static void run() {
         Scanner s = new Scanner(System.in);
         int k = s.nextInt();
         double ans = findGeometricSum(k);

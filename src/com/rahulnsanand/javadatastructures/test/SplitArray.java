@@ -30,7 +30,7 @@ public class SplitArray {
 
     static Scanner s = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void run() {
         int n = s.nextInt();
         int input[] = new int[n];
         for(int i = 0; i < n; i++) {

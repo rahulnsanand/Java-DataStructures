@@ -31,7 +31,7 @@ public class MinimumCount {
         return (squareRoot * squareRoot == x);
     }
 
-    public static void main(String[] args) {
+    public static void run() {
         // TODO Auto-generated method stub
         Scanner s = new Scanner(System.in);
         int num = s.nextInt();

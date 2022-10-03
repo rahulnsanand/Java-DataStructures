@@ -26,7 +26,7 @@ public class PairStar {
     }
 
 
-    public static void main(String[] args) {
+    public static void run() {
         Scanner s = new Scanner(System.in);
         String input = s.nextLine();
         System.out.println(addStars(input));

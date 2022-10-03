@@ -10,6 +10,13 @@ import com.rahulnsanand.javadatastructures.fundamentals.assignments.*;
 import com.rahulnsanand.javadatastructures.debug.DebugClass;
 import com.rahulnsanand.javadatastructures.fundamentals.HelloWorld;
 import com.rahulnsanand.javadatastructures.fundamentals.SumOfNumbers;
+import com.rahulnsanand.javadatastructures.linkedlist.DeleteNodeInLL;
+import com.rahulnsanand.javadatastructures.linkedlist.InsertNodeInLL;
+import com.rahulnsanand.javadatastructures.linkedlist.LengthOfLL;
+import com.rahulnsanand.javadatastructures.linkedlist.PrintIthNode;
+import com.rahulnsanand.javadatastructures.linkedlist.assignments.*;
+import com.rahulnsanand.javadatastructures.oops.ComplexNumberProblem;
+import com.rahulnsanand.javadatastructures.oops.PolynomialClassProblem;
 import com.rahulnsanand.javadatastructures.operatorsandloop.AllPrimeNumbers;
 import com.rahulnsanand.javadatastructures.operatorsandloop.NthFibonacciNumber;
 import com.rahulnsanand.javadatastructures.operatorsandloop.assignment.*;
@@ -19,6 +26,7 @@ import com.rahulnsanand.javadatastructures.pattern.assignments.OddSquare;
 import com.rahulnsanand.javadatastructures.pattern.assignments.ParallelogramPattern;
 import com.rahulnsanand.javadatastructures.pattern.assignments.SumPattern;
 import com.rahulnsanand.javadatastructures.recursion.*;
+import com.rahulnsanand.javadatastructures.recursion.assignments.*;
 import com.rahulnsanand.javadatastructures.test.*;
 import com.rahulnsanand.javadatastructures.timecomplexity.ArrayEquilibriumIndex;
 import com.rahulnsanand.javadatastructures.timecomplexity.ArrayIntersection;
@@ -55,6 +63,8 @@ public class Main {
             System.out.println("9 - Strings");
             System.out.println("10 - Time Complexity");
             System.out.println("11 - Recursion");
+            System.out.println("12 - OOPS");
+            System.out.println("13 - Linked List");
 
             choice = scannerInput.nextInt();
             switch (choice) {
@@ -70,8 +80,53 @@ public class Main {
                 case 9 -> showStrings();
                 case 10 -> showTimeComplexity();
                 case 11 -> showRecursion();
+                case 12 -> showOOPS();
+                case 13 -> showLinkedList();
 
             }
+        }
+
+    }
+
+    private static void showLinkedList() throws IOException {
+        Scanner scannerInput = new Scanner(System.in);
+        System.out.println("0 - Length of LinkedList");
+        System.out.println("1 - Print ith Node from LinkedList");
+        System.out.println("2 - Insert Node in LinkedList");
+        System.out.println("3 - Delete Node in LinkedList");
+        System.out.println("4 - Find Node In LinkedList");
+        System.out.println("5 - Append Last N to First in LinkedList");
+        System.out.println("6 - Eliminate Duplicates From LinkedList");
+        System.out.println("7 - Print Reverse LinkedList");
+        System.out.println("8 - Palindrome in LinkedList");
+
+
+        int choice = scannerInput.nextInt();
+        switch (choice) {
+            case 0 -> LengthOfLL.run();
+            case 1 -> PrintIthNode.run();
+            case 2 -> InsertNodeInLL.run();
+            case 3 -> DeleteNodeInLL.run();
+            case 4 -> FindNodeInLL.run();
+            case 5 -> AppendLastNToFirst.run();
+            case 6 -> EliminateDuplicatesFromLL.run();
+            case 7 -> PrintReverseLL.run();
+            case 8 -> PalindromeLL.run();
+        }
+    }
+
+    private static void showOOPS() {
+
+        Scanner scannerInput = new Scanner(System.in);
+        System.out.println("0 - Complex Number Problem");
+        System.out.println("1 - Polynomial Class Problem");
+
+
+        int choice = scannerInput.nextInt();
+        switch (choice) {
+            case 0 -> ComplexNumberProblem.run();
+            case 1 -> PolynomialClassProblem.run();
+
         }
 
     }
@@ -90,6 +145,15 @@ public class Main {
         System.out.println("9 - Merge Sort Recursive");
         System.out.println("10 - Quick Sort Recursive");
         System.out.println("11 - Tower Of Hanoi Recursive");
+        System.out.println("12 - Check AB");
+        System.out.println("13 - Check Palindrome");
+        System.out.println("14 - Count Zeroes");
+        System.out.println("15 - Geometric Sum");
+        System.out.println("16 - Multiplication");
+        System.out.println("17 - Pair Star");
+        System.out.println("18 - Staircase");
+        System.out.println("19 - String To Integer");
+        System.out.println("20 - Sum Of Digits");
 
         int choice = scannerInput.nextInt();
         switch (choice) {
@@ -105,6 +169,15 @@ public class Main {
             case 9 -> MergeSortRecursive.run();
             case 10 -> QuickSortRecursive.run();
             case 11 -> TowerOfHanoiRecursive.run();
+            case 12 -> CheckAB.run();
+            case 13 -> CheckPalindrome.run();
+            case 14 -> CountZeroes.run();
+            case 15 -> GeometricSum.run();
+            case 16 -> Multiplication.run();
+            case 17 -> PairStar.run();
+            case 18 -> Staircase.run();
+            case 19 -> StringToInteger.run();
+            case 20 -> SumOfDigits.run();
         }
     }
 
@@ -236,10 +309,10 @@ public class Main {
         System.out.println("9 - Rectangular Numbers");
         System.out.println("10 - Find Maximum Sub Array");
         System.out.println("11 - Faulty Keyboard");
-        System.out.println("12 - ");
-        System.out.println("13 - ");
-        System.out.println("14 - ");
-        System.out.println("15 - ");
+        System.out.println("12 - Print 2D Array");
+        System.out.println("13 - Split Array");
+        System.out.println("14 - Minimum  Count");
+        System.out.println("15 - Maximum Profit on Application");
         System.out.println("16 - ");
         System.out.println("17 - ");
         System.out.println("18 - ");
@@ -258,11 +331,11 @@ public class Main {
             case 9 -> RectangularNumbers.run();
             case 10 -> FindMaximumSubArray.run();
             case 11 -> FaultyKeyboard.run();
+            case 12 -> Print2DArray.run();
+            case 13 -> SplitArray.run();
+            case 14 -> MinimumCount.run();
+            case 15 -> MaximumProfitApp.run();
             // Bookmark
-            case 12 -> StarPattern.run();
-            case 13 -> TriangleOfNumbers.run();
-            case 14 -> DiamondOfStars.run();
-            case 15 -> HalfDiamondPattern.run();
             case 16 -> ParallelogramPattern.run();
             case 17 -> SumPattern.run();
             case 18 -> OddSquare.run();
