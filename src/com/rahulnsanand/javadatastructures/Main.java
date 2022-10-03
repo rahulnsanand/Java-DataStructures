@@ -10,10 +10,7 @@ import com.rahulnsanand.javadatastructures.fundamentals.assignments.*;
 import com.rahulnsanand.javadatastructures.debug.DebugClass;
 import com.rahulnsanand.javadatastructures.fundamentals.HelloWorld;
 import com.rahulnsanand.javadatastructures.fundamentals.SumOfNumbers;
-import com.rahulnsanand.javadatastructures.linkedlist.DeleteNodeInLL;
-import com.rahulnsanand.javadatastructures.linkedlist.InsertNodeInLL;
-import com.rahulnsanand.javadatastructures.linkedlist.LengthOfLL;
-import com.rahulnsanand.javadatastructures.linkedlist.PrintIthNode;
+import com.rahulnsanand.javadatastructures.linkedlist.*;
 import com.rahulnsanand.javadatastructures.linkedlist.assignments.*;
 import com.rahulnsanand.javadatastructures.oops.ComplexNumberProblem;
 import com.rahulnsanand.javadatastructures.oops.PolynomialClassProblem;
@@ -99,6 +96,17 @@ public class Main {
         System.out.println("6 - Eliminate Duplicates From LinkedList");
         System.out.println("7 - Print Reverse LinkedList");
         System.out.println("8 - Palindrome in LinkedList");
+        System.out.println("0 - Delete Node Recursively");
+        System.out.println("1 - Reverse LL Recursive");
+        System.out.println("2 - Mid Point Linked List");
+        System.out.println("3 - Merge Two Sorted LinkedList");
+        System.out.println("4 - Merge Sort LinkedList");
+        System.out.println("5 - Find a node in LinkedList Recursive");
+        System.out.println("6 - Event After Odd LinkedList");
+        System.out.println("7 - Delete Every N Nodes");
+        System.out.println("8 - Swap Two Nodes Of LL");
+        System.out.println("7 - k Reverse");
+        System.out.println("8 - Bubble Sort Iterative LinkedList");
 
 
         int choice = scannerInput.nextInt();
@@ -112,6 +120,18 @@ public class Main {
             case 6 -> EliminateDuplicatesFromLL.run();
             case 7 -> PrintReverseLL.run();
             case 8 -> PalindromeLL.run();
+
+            case 9 -> DeleteNodeRecursive.run();
+            case 10 -> ReverseLinkedListRecursive.run();
+            case 11 -> MidPointLinkedList.run();
+            case 12 -> MergeTwoSortedLL.run();
+            case 13 -> MergeSortLL.run();
+            case 14 -> AppendLastNToFirst.run();
+            case 15 -> EliminateDuplicatesFromLL.run();
+            case 16 -> PrintReverseLL.run();
+            case 17 -> PalindromeLL.run();
+            case 18 -> PrintReverseLL.run();
+            case 19 -> PalindromeLL.run();
         }
     }
 
