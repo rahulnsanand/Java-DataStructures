@@ -19,6 +19,11 @@ import com.rahulnsanand.javadatastructures.pattern.assignments.OddSquare;
 import com.rahulnsanand.javadatastructures.pattern.assignments.ParallelogramPattern;
 import com.rahulnsanand.javadatastructures.pattern.assignments.SumPattern;
 import com.rahulnsanand.javadatastructures.test.*;
+import com.rahulnsanand.javadatastructures.timecomplexity.ArrayEquilibriumIndex;
+import com.rahulnsanand.javadatastructures.timecomplexity.ArrayIntersection;
+import com.rahulnsanand.javadatastructures.timecomplexity.assignment.DuplicateInArray;
+import com.rahulnsanand.javadatastructures.timecomplexity.assignment.FindUniqueElement;
+import com.rahulnsanand.javadatastructures.timecomplexity.assignment.PairSumInArray;
 import com.rahulnsanand.javadatastructures.twodimensionalarrays.LargestRowSum;
 import com.rahulnsanand.javadatastructures.twodimensionalarrays.RowWiseSum;
 import com.rahulnsanand.javadatastructures.twodimensionalarrays.assignment.PrintSpiral;
@@ -48,6 +53,7 @@ public class Main {
             System.out.println("8 - 2D Arrays");
             System.out.println("9 - Strings");
             System.out.println("10 - Time Complexity");
+            System.out.println("11 - Time Complexity");
 
             choice = scannerInput.nextInt();
             switch (choice) {
@@ -70,23 +76,23 @@ public class Main {
 
     private static void showTimeComplexity() throws IOException {
         Scanner scannerInput = new Scanner(System.in);
-        System.out.println("0 - Row Wise Sum");
-        System.out.println("1 - Largest Row Sum");
-        System.out.println("2 - Total Sum Of Boundaries And Diagonals");
-        System.out.println("3 - Print Spiral");
-        System.out.println("4 - Largest Row Sum");
-        System.out.println("5 - Total Sum Of Boundaries And Diagonals");
-        System.out.println("6 - Triplet Sum");
+        System.out.println("0 - Array Intersection");
+        System.out.println("1 - Array Equilibrium Index");
+        System.out.println("2 - Find Unique Element");
+        System.out.println("3 - Duplicate In Array");
+        System.out.println("4 - Pair Sum In Array");
+        System.out.println("5 - Triplet Sum");
+        System.out.println("6 - Rotate Array");
 
         int choice = scannerInput.nextInt();
         switch (choice) {
-            case 0 -> RowWiseSum.run();
-            case 1 -> LargestRowSum.run();
-            case 2 -> TotalSumOfBoundariesAndDiagonals.run();
-            case 3 -> PrintSpiral.run();
-            case 4 -> LargestRowSum.run();
-            case 5 -> TotalSumOfBoundariesAndDiagonals.run();
-            case 6 -> TripletSum.run();
+            case 0 -> ArrayIntersection.run();
+            case 1 -> ArrayEquilibriumIndex.run();
+            case 2 -> FindUniqueElement.run();
+            case 3 -> DuplicateInArray.run();
+            case 4 -> PairSumInArray.run();
+            case 5 -> TripletSum.run();
+            case 6 -> RotateArray.run();
         }
     }
 
