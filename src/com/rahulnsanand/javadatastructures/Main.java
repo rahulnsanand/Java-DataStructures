@@ -18,6 +18,7 @@ import com.rahulnsanand.javadatastructures.pattern.assignments.HalfDiamondPatter
 import com.rahulnsanand.javadatastructures.pattern.assignments.OddSquare;
 import com.rahulnsanand.javadatastructures.pattern.assignments.ParallelogramPattern;
 import com.rahulnsanand.javadatastructures.pattern.assignments.SumPattern;
+import com.rahulnsanand.javadatastructures.recursion.CalculatePower;
 import com.rahulnsanand.javadatastructures.test.*;
 import com.rahulnsanand.javadatastructures.timecomplexity.ArrayEquilibriumIndex;
 import com.rahulnsanand.javadatastructures.timecomplexity.ArrayIntersection;
@@ -53,7 +54,7 @@ public class Main {
             System.out.println("8 - 2D Arrays");
             System.out.println("9 - Strings");
             System.out.println("10 - Time Complexity");
-            System.out.println("11 - Time Complexity");
+            System.out.println("11 - Recursion");
 
             choice = scannerInput.nextInt();
             switch (choice) {
@@ -68,10 +69,33 @@ public class Main {
                 case 8 -> showTwoDArrays();
                 case 9 -> showStrings();
                 case 10 -> showTimeComplexity();
+                case 11 -> showRecursion();
 
             }
         }
 
+    }
+
+    private static void showRecursion() {
+        Scanner scannerInput = new Scanner(System.in);
+        System.out.println("0 - Calculate Power");
+        System.out.println("1 - Array Equilibrium Index");
+        System.out.println("2 - Find Unique Element");
+        System.out.println("3 - Duplicate In Array");
+        System.out.println("4 - Pair Sum In Array");
+        System.out.println("5 - Triplet Sum");
+        System.out.println("6 - Rotate Array");
+
+        int choice = scannerInput.nextInt();
+        switch (choice) {
+            case 0 -> CalculatePower.run();
+            case 1 -> ArrayEquilibriumIndex.run();
+            case 2 -> FindUniqueElement.run();
+            case 3 -> DuplicateInArray.run();
+            case 4 -> PairSumInArray.run();
+            case 5 -> TripletSum.run();
+            case 6 -> RotateArray.run();
+        }
     }
 
     private static void showTimeComplexity() throws IOException {
