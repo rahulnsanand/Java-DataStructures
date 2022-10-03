@@ -2,7 +2,7 @@ package com.rahulnsanand.javadatastructures.recursion;
 
 import java.util.Scanner;
 
-public class NumberOfDigits {
+public class FirstNNaturalNumbers {
     public static void run() {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();

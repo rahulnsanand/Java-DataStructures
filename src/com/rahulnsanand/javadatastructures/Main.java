@@ -19,6 +19,8 @@ import com.rahulnsanand.javadatastructures.pattern.assignments.OddSquare;
 import com.rahulnsanand.javadatastructures.pattern.assignments.ParallelogramPattern;
 import com.rahulnsanand.javadatastructures.pattern.assignments.SumPattern;
 import com.rahulnsanand.javadatastructures.recursion.CalculatePower;
+import com.rahulnsanand.javadatastructures.recursion.FirstNNaturalNumbers;
+import com.rahulnsanand.javadatastructures.recursion.NumberOfDigits;
 import com.rahulnsanand.javadatastructures.test.*;
 import com.rahulnsanand.javadatastructures.timecomplexity.ArrayEquilibriumIndex;
 import com.rahulnsanand.javadatastructures.timecomplexity.ArrayIntersection;
@@ -79,18 +81,18 @@ public class Main {
     private static void showRecursion() {
         Scanner scannerInput = new Scanner(System.in);
         System.out.println("0 - Calculate Power");
-        System.out.println("1 - Array Equilibrium Index");
-        System.out.println("2 - Find Unique Element");
-        System.out.println("3 - Duplicate In Array");
-        System.out.println("4 - Pair Sum In Array");
-        System.out.println("5 - Triplet Sum");
-        System.out.println("6 - Rotate Array");
+        System.out.println("1 - Number Of Digits");
+        System.out.println("2 - Print First N Natural Numbers");
+        System.out.println("3 - Sum Of Array - Recursion");
+        System.out.println("4 - Check Number In Array");
+        System.out.println("5 - First Index Of A Number In An");
+        System.out.println("6 - Last Index Of A Number ");
 
         int choice = scannerInput.nextInt();
         switch (choice) {
             case 0 -> CalculatePower.run();
-            case 1 -> ArrayEquilibriumIndex.run();
-            case 2 -> FindUniqueElement.run();
+            case 1 -> NumberOfDigits.run();
+            case 2 -> FirstNNaturalNumbers.run();
             case 3 -> DuplicateInArray.run();
             case 4 -> PairSumInArray.run();
             case 5 -> TripletSum.run();
